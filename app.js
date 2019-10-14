@@ -29,12 +29,11 @@ app.post('/upload', (req, res) => {
 
     const fileHash = await addFile(fileName, filePath);
     fs.unlink(filePath, (err) => {
-      if (err) {
-        console.log(err);
-      }
-
+      if (err) console.log(err);
+    });
       res.render('upload', { fileName, fileHash });
   });
+
 });
 
 const addFile = async (fileName, filePath) => {
@@ -44,3 +43,7 @@ const addFile = async (fileName, filePath) => {
 
   return fileHash;
 }
+
+app.listen(3000, () => {
+  console.log('Listening on port 3000...');
+});
