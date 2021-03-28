@@ -1,4 +1,3 @@
 
-## IPFS NodeJS App
+## React Apps
 
-Last updated on 09.11.2020
