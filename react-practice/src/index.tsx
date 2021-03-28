@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/index.css';
+import './styles/main.css';
 import reportWebVitals from './reportWebVitals';
-import Hero from './components/hero';
+import Footer from './components/footer';
+import Timer from './components/timer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Hero />
+    <Timer />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
