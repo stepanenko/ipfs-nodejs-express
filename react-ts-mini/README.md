@@ -1,4 +1,5 @@
-# Minimal React TS Starter
+
+## Minimal React TS Starter
 
 No testing, just a minimalistic react + typescript app
 
